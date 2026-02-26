@@ -1,0 +1,16 @@
+[project]
+name = "planet_calc"
+version = "0.1.0"
+dependencies = [
+  "typer",
+  "matplotlib",
+  "pandas",
+  "pick"
+]
+
+[project.scripts]
+planet-calc = "planet_calc.__main__:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
