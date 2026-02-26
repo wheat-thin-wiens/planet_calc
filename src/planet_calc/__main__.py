@@ -73,7 +73,7 @@ def graph(min: int = 1, max: int = 10):
     index = list(level_values.keys())
     df = DataFrame(level_values, index=index).transpose()
 
-    df.plot()
+    df.plot(legend=False)
     plt.xticks(range(min, max + 1))
     plt.show()
 
